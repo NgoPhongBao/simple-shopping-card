@@ -1,5 +1,5 @@
-docker build -t img_admin ./
-docker stop cont_admin || true && docker rm cont_admin || true 
-docker run -d -p 3001:80 --name cont_admin img_admin
+docker build -t img_admin_bao_test ./
+docker stop cont_admin_bao_test || true && docker rm cont_admin_bao_test || true 
+docker run -d -p 4001:80 --name cont_admin_bao_test img_admin_bao_test
  
 
