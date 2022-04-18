@@ -5,7 +5,8 @@ import { v4 } from "uuid";
 export default function TabProduct(props) {
   const { newProducts = [], topSaleProducts = [] } = props;
 
-  const [tabActive, setTabActive] = useState("new");
+  const [tabActive, setTabActive] = useState(newProducts.length ? "new" : "top");
+
   return (
     <div className="product-area pt-65 pb-30 fadein">
       <div className="container">
