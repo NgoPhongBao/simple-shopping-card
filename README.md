@@ -10,7 +10,7 @@ How to run admin page:
 
 How to run web:
   - cd web 
-  - npm instewrwerweall
+  - npm install
   - npm run dev
 
 
