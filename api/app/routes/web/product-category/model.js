@@ -45,7 +45,7 @@ const model = {
   getProduct: async (queryParams = {}) => {
     let {
       productCategoryId = null,
-      rangePrice = [0, 20000000],
+      rangePrice = [0, 50000000],
       pageSize = 12,
       pageIndex = 1,
       brand = [],
