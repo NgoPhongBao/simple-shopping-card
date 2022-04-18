@@ -8,8 +8,8 @@ import bgImg from "../assets/images/bg.jpg"
 export default function Login() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    username: "",
-    password: "",
+    username: "admin",
+    password: "123456",
   });
 
   const [err, setErr] = useState({
@@ -70,7 +70,7 @@ export default function Login() {
           <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12 text-center">
             Đăng nhập tài khoản của bạn
           </h1>
-          <form className="mt-6" action="#" method="POST">
+          <form className="mt-6">
             <div>
               <label className="block text-gray-700" htmlFor="username">
                 Username<span className="text-red-6">*</span>
