@@ -1,0 +1,148 @@
+1. CategoryProduct
+- ID Int
+- Name nvarchar (250)
+- CreatedDate datetime 
+- Enable bool 
+2. Product
+- ID  int
+- Name nvarchar (250)
+- ProductCatagoryID int
+- BrandId int
+- Price decimal 
+- Description nvarchar(max) 
+- Title nvarchar(500)
+- Images varchar(200)
+- CreatedDate datetime
+- ModifyDate  datetime
+- ModifyUser nvarchar(50)
+- CreatedUser nvarchar(50)
+- Enable
+3. ProductImage
+- ID int
+- ProductID INT
+- Images varchar(200)
+- CreatedUser datetime
+- CreatedDate datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+
+=== thông tin thương hiệu ===========
+4. Brand
+- ID int
+- BrandName nvarchar(100)
+- CreatedUser datetime
+- CreatedDate datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+
+=== thông tin của hàng ===========
+5. Store
+- ID int
+- Name nvarchar(300)
+- Images varchar(200)
+- Address nvarchar(300)
+- TaxCode nvarchar(50)
+- Email nvarchar(100)
+- Phone nvarchar(50)
+- Description nvarchar(500)
+- Title nvarchar(200)
+- Logo nvarchar(200)
+- Maps varchar(1000)
+- CreatedUser datetime
+- CreatedDate datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+============ Tin tức ===========
+6. News
+- ID
+- Title
+- Image
+- Description
+- HotNum
+- CreatedUser datetime
+- CreatedDate datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+7. Order
+- ID
+- Phone
+- CusName
+- CreatedDate
+- Status int 
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+8. OderDetail
+- Id 
+- OrderID
+- ProductID
+- Price
+- ProductTotal
+- CreatedDate datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+9. Banner
+- ID 
+- Image
+- Url
+- BannerType
+- Enable
+- CreatedDate datetime
+- CreatedUser datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+
+
+10. User
+- ID
+- FullName
+- UserName
+- PassWord
+- GroupRuleID
+- CreatedDate datetime
+- CreatedUser datetime
+- ModifyDate nvarchar(50)
+- ModifyUser nvarchar(50)
+
+11. GroupRule
+- ID 
+- Name
+- CreatedDate datetime
+- CreatedUser datetime
+
+
+https://template.hasthemes.com/devita/devita/index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+@import 'antd/dist/antd.css';
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.ant-popconfirm .ant-btn-primary{
+  background-color: #40a9ff;
+}
+.ant-message-custom-content{
+  display: flex;
+  align-items: center;
+}
+
+.fadein {
+  animation: fadein 0.5s;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+
+
+#portal {
+  .ant-card-extra{
+    padding: 0;
+  }
+  .ant-card-head{
+    background-color: #40a9ff;
+    color: #fafafa;
+  }
+  .ant-card-body{
+    padding: 0;
+  }
+  .ant-table-cell{
+    padding: 0.3rem 0.5rem;
+  }
+  th.ant-table-cell{
+    background-color: #40a9ff;
+    color: #fafafa;
+    text-align: center;
+  }
+  ul.ant-pagination{
+    padding: 0 30px;
+    justify-content: center;
+    @media (min-width: 768px) {
+      justify-content: end
+    }
+    .ant-pagination-item-link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  ul.ant-menu::-webkit-scrollbar{
+    width: 3px;
+    height: 300px;
+  }
+
+  ul.ant-menu::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    height: 300px;
+  }
+  ul.ant-menu::-webkit-scrollbar-thumb{
+    background: rgb(126, 163, 233);
+    height: 300px;
+  }
+  ul.ant-menu::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    height: 300px;
+  }
+  .banner_upload .single-image-uploader{
+    .ant-upload-list.ant-upload-list-picture-card .ant-upload.ant-upload-select.ant-upload-select-picture-card{
+      width: 100%;
+    }
+    .ant-upload-list-picture-card-container{
+      width: 100%;
+    }
+  }
+} 
+
+.modal_change_pass .ant-btn-primary{
+  background-color: #1890ff;
+}
+
