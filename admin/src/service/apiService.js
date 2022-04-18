@@ -18,7 +18,12 @@ const api = {
             reject(err.response.data);
             storage.deleteAuth();
             setTimeout(() => {
-              window.location.href = "/login";
+              if(window.location.origin.indexOf("localhost") >= 0){
+                window.location.href = "/login";
+              }
+              else{
+                window.location.href = "/admin/login";
+              }
             }, 500)
             
           }
