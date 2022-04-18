@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, storeInfo, productCategoryMenu }) {
   return (
     <>
       <Head>
-        <title>Điện lạnh Duy Nhất</title>
+        <title>My website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ContextProviver>

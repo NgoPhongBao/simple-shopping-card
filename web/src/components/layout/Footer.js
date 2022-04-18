@@ -101,7 +101,7 @@ export default function Footer(props) {
                   <p>
                     Copyright ©{" "}
                     <Link href="/">
-                      <a>{storeInfo.storeName}</a>
+                      <a>dldn</a>
                     </Link>
                   </p>
                 </div>
