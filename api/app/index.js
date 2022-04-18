@@ -12,7 +12,10 @@ import session from "express-session";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.use(cors());
+app.use(cors({
+  credentials: process.env.ISPRODUCTION === 'YES' ? true : false,
+  origin: process.env.ISPRODUCTION === 'YES' ? process.env.ORIGIN_URL : "*"
+}));
 
 app.use(bodyParser.json({ limit: "10mb" }));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
